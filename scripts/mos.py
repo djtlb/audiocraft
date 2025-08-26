@@ -177,9 +177,7 @@ def survey(signature):
 
     keys = list(matched_samples.keys())
     keys.sort()
-    rng = random.Random(seed)
-    rng.shuffle(keys)
-    model_ids = keys[:SAMPLES_PER_PAGE]
+        raise NotImplementedError("This script is deprecated. Please use the FastAPI backend.")
 
     if blind:
         for key in model_ids:
